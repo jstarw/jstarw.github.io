@@ -1,0 +1,109 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.title {
+	font-family: Avenir, Calibri, sans-serif;
+	margin-top: auto;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	font-size: 4em;
+  color: white;
+}
+
+
+#navbar {
+	position: relative;
+	padding: 10px; 
+	display: inline;
+	list-style-type: none;
+	position: fixed;
+	font-family: Avenir, Calibri, sans-serif;
+  color:white;
+}
+
+body > div {
+    margin-bottom: 0px;
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    clear: both;
+}
+
+.jumbotron {
+    background-image: url("http://www.psdgraphics.com/file/colorful-triangles-background.jpg");
+
+}
+
+.jumbotron2 {
+   background-image: url("http://p1.pichost.me/i/38/1613409.jpg");
+}
+
+.header {
+	height: 55em;
+	width:800px;
+	padding: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.resume {
+  height: 25em;
+  max-width: 1400px;
+  margin: auto;
+}
+
+li {
+	padding-bottom: 10px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: auto;
+  padding-left: 2%;
+  padding-right: 2%;
+  clear: both;
+  min-height: 25em;
+}
+
+.aboutme {
+	width: 100%;
+	margin-bottom: 0%;
+	font-size: 1.5em;
+	border-bottom: 1px solid black;
+}
+
+section, aside {
+  	margin: auto;  
+  	font-family: Segoe UI, Avenir, Calibri, sans-serif;
+  	font-size: 1.3em;
+  	text-align: justify;
+}
+section {
+  	float: left;
+  	width: 45%;    /* 340px ÷ 538px = .63197026 */   
+}
+aside {
+  	float: right;
+  	width: 45%;  /* 158px ÷ 538px = .293680297 */
+}
+
+figure {
+  	height: 0;
+  	padding-bottom: 56.25%; /* 16:9 */
+  	position: relative;
+  	width: 100%;
+  	float: left;
+  	background-size: cover;
+}
+iframe {
+  height: 100%;
+  left: 0%;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+}
