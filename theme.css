@@ -14,51 +14,72 @@ html, body {
   color: white;
 }
 
+ul, li, div {
+  list-style-type: none;
+  padding: 0;
+  font-family: Segoe UI, Avenir, Calibri, sans-serif;
+}
 
 #navbar {
+  width: 100%;
 	position: relative;
-	padding: 10px; 
-	display: inline;
 	list-style-type: none;
 	position: fixed;
-	font-family: Avenir, Calibri, sans-serif;
-  color:white;
+  background-color: white;
+}
+
+a, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  display: inline;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 body > div {
-    margin-bottom: 0px;
-    background-position: 100% 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    clear: both;
+  margin-bottom: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0% 100%;
+  clear: both;
 }
 
 .jumbotron {
-    background-image: url("Images/Background1.jpg");
+  background-image: url("Images/Background1.jpg");
 
 }
 
 .jumbotron2 {
-   background-image: url("Images/Background2.jpg");
+  background-image: url("Images/Background2.jpg");
+}
+
+.jumbotron3 {
+  background-image: url("Images/Background3.jpg");
+}
+
+.jumbotron4 {
+  background-color: #CCFFCC;
 }
 
 .header {
 	height: 55em;
-	width:800px;
+	max-width:800px;
 	padding: 30px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
-.resume {
-  height: 25em;
+.resume, .resume2 {
   max-width: 1400px;
   margin: auto;
 }
 
-li {
-	padding-bottom: 10px;
+.resume {
+  height: 25em;
 }
 
 .container {
@@ -66,32 +87,84 @@ li {
 	margin: auto;
   padding-left: 2%;
   padding-right: 2%;
+  padding-bottom: 2%;
   clear: both;
-  min-height: 25em;
+}
+
+.resume2 {
+  height: 35em;
 }
 
 .aboutme {
 	width: 100%;
+  padding-top: 2em;
 	margin-bottom: 0%;
 	font-size: 1.5em;
 	border-bottom: 1px solid black;
 }
 
-section, aside {
-  	margin: auto;  
-  	font-family: Segoe UI, Avenir, Calibri, sans-serif;
-  	font-size: 1.3em;
-  	text-align: justify;
+section, aside{
+  margin: auto;  
+  font-family: Segoe UI, Avenir, Calibri, sans-serif;
+  font-size: 1.3em;
+  text-align: justify;
 }
 section {
-  	float: left;
-  	width: 45%;    /* 340px ÷ 538px = .63197026 */   
+  float: left;
+  width: 45%;    /* 340px ÷ 538px = .63197026 */   
 }
 aside {
-  	float: right;
-  	width: 45%;  /* 158px ÷ 538px = .293680297 */
+  float: right;
+  width: 45%;  /* 158px ÷ 538px = .293680297 */
 }
 
 img {
-  
+  margin: auto;
+  width: 100px;
+  padding-top: 5em;
+  display: block;
+} 
+
+.project-list {
+  clear: both;
+  border: 2px solid black;
+  padding: 2em;
 }
+
+.space {
+  min-height: 2em;
+  clear: both;
+}
+
+.project-title, .project-link{
+  text-decoration: none;
+  font-size: 2em;
+  text-align: center;
+}
+
+.project-description {
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+.project-title:hover, .project-link:hover{
+background-color: #9FD89F;
+}
+
+td, tr, table {
+  margin: auto;
+  position: relative;
+  border-spacing: 1em;
+}
+
+td > p {
+  font-family: Segoe UI, Avenir, Calibri, sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  background-color: white;
+}
+
+.footer {
+  clear: both;
+}
+

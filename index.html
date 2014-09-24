@@ -5,38 +5,114 @@
 	<link rel="stylesheet" type="text/css" href="theme.css" >
 </head>
 <body>
+	<script src="dist/js/bind-polyfill.js"></script>
+	<script src="dist/js/smooth-scroll.js"></script>
+
 	<div class="jumbotron">
 		<div id="navbar">
 			<ul>
-				<li>Home</li>
-				<li>About Me</li>
-				<li>Projects</li>
-				<li>Resume</li>
+				<li class="nav"><a data-scroll href="#jump1"><strong>Home</strong></a></li>
+				<li class="nav"><a data-scroll href="#jump2"><strong>About Me</strong></a></li>
+				<li class="nav"><a data-scroll href="#jump3"><strong>Projects</strong></a></li>
+				<li class="nav"><a data-scroll href="#jump4"><strong>Resume</strong></a></li>
+				<li class="nav"><a data-scroll href="#jump5"><strong>Contact</strong></a></li>
 			</ul>
 		</div>
-		<div class="header">
-			<h1 class="title">THIS IS JONATHAN WEN.</h1>
+		<span id="jump1">
+			<div class="header">
+				<h1 class="title">THIS IS JONATHAN WEN.</h1>
+			</div>
+		</span>
+	</div>
+
+	<div id="jump2"></div>
+
+		<div class="container">
+			<section class="aboutme"><p><strong>About Me</strong></p></section>
+			<section><p>Hey everyone! I'm Jonathan Wen and I am currently in 1A Systems Design Engineering at the University of Waterloo. My home city is Toronto, Canada. Welcome to my website!</p></section>
+			<aside><p>I am a very outgoing person and I love to learn and to create new things. Hence, I love creating and developing software. I have created a variety of projects, from a portable game device to a robotic lifting partner!</p></aside>
+	 		<section><p><br>I am very passionate about music and arts. Not only do i play guitar and piano, but I am an avid photographer, experimenting with different concepts every time.</p></section>
+	 		<aside><p>Feel free to browse around my website and look at my most recent projects. I would love to hear from you! You can contact me via email or Linkedin!</p></aside>
 		</div>
+
+	<div id="jump3"></div>
+
+	<div class="jumbotron4">
+			<div class="container">
+				<section class="aboutme">
+					<p><strong>Projects</strong></p>
+				</section>
+				<div class="space"></div>
+				<div class="projects">
+					<ul>
+						<li class="project-list">
+							<a href="" class="project-title">SkyRuler</a>
+							<p class="project-description">This is a fun little project that I built in Computer Engineering. It uses an Arduino Uno microcontroller, 8x8 LED matrix, and 2 buttons to create a fun and interactive game. <br><br> You are a person trying to survive the apocalyse. Giant sheets of debris constantly come falling your way. The only way of surviving is to avoid all the debris by moving side to side. Check it out! </p>
+							<a href="" class="project-link">See the code!</a>
+						</li>
+						<div class="space"></div>
+						<li class="project-list">
+							<p class="project-title">More projects to come!</p>
+						</li>
+					</ul>
+				</div>		
+			</div>
 	</div>
 
-	<div class="container">
-		<section class="aboutme"><p><strong>About Me</strong></p></section>
-		<section><p>Hey everyone! I'm Jonathan Wen and I am currently in 1A Systems Design Engineering at the University of Waterloo. My home city is Toronto, Canada. Welcome to my website!</p></section>
-		<aside><p>I am a very outgoing person and I love to learn and to create new things. Hence, I love creating and developing software. I have created a variety of projects, from a portable game device to a robotic lifting partner!</p></aside>
- 		<section><p><br>Not only that, but I have a passion for music and arts. Not only do i play guitar and piano, but I am an avid photographer, experimenting with different concepts every time.</p></section>
- 		<aside><p>Feel free to browse around my website and look at my most recent projects. I would love to hear from you! You can contact me via email or Linkedin!</p></aside>
-	</div>
+	<div id="jump4"></div>
 
-	<div class="jumbotron2">
+	<div class="jumbotron3">
 		<div class="resume">
 			<div class="container">
 				<section class="aboutme">
 					<p><strong>Resume</strong></p>
 				</section>
-				<img src="Images/Dropbox.gif">
+				<table class="icon" style='width:100%' align="center">
+					<tr>
+						<td>
+							<a href="https://www.dropbox.com/s/qp9qd1d2665oszq/Programming.pdf?dl=0">
+								<img src="Images/Dropbox.png">
+							</a>
+						</td>
+					</tr>
+						
+				</table>
 			</div>
 		</div>
 	</div>
+
+	<div id="jump5"></div>
+
+	<div class="jumbotron2">
+		<div class="resume2">
+			<div class="container">
+				<section class="aboutme">
+					<p><strong>Contact me!</strong></p>
+				</section>
+					<table class="icon" style='width:100%' align="center">
+						<tr>
+							<td>
+								<a href="https://github.com/jstarw"><img src="Images/Github.png"></a>
+							</td>
+							<td>
+								<a href="https://www.linkedin.com/profile/view?id=298858885&trk=nav_responsive_tab_profile_pic"><img src="Images/LinkedIn.png"></a>
+							</td>
+							<td>
+								<a href="mailto:jonathanwen95@gmail.com?Subject=Hey!%20I%20saw%20your%20website!" target="_top"><img src="Images/Email.png"></a>
+							</td>
+						</tr>
+						<tr>
+							<td><p>Github</p></td>
+							<td><p>LinkedIn</p></td>
+							<td><p>Email</p></td>
+						</tr>					
+					</table>
+			</div>
+		</div>
+	</div>
+	<script>
+		smoothScroll.init();
+	</script>
 	<!--
 	<figure>
   		<iframe src="http://player.vimeo.com/video/47817138" width="WIDTH" height="HEIGHT" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
