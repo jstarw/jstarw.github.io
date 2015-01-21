@@ -127,6 +127,7 @@ img {
 
 .project-list {
   clear: both;
+  display: inline-block;
   border: 2px solid black;
   padding: 2em;
 }
@@ -168,3 +169,11 @@ td > p {
   clear: both;
 }
 
+.instatab {
+  float: right;
+  width: 50%;
+  padding-left: 2em;
+  padding-top: 0;
+  display: inline-block;
+  clear: both;
+}
