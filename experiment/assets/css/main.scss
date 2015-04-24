@@ -1,3 +1,10 @@
+/*MIXINS*/
+@mixin fit-container {
+	width: 100%;
+	height: 100%;
+}
+
+
 body, html {
 	margin: 0;
 	padding:0;
@@ -5,6 +12,7 @@ body, html {
 	height: 100%;
 }
 
+/*LANDING PAGE*/
 video#bgvid{
 	position: absolute; right: 0; bottom: 0;
 	min-width: 100%; min-height: 100%;
@@ -13,34 +21,39 @@ video#bgvid{
 	background-size: cover;
 }
 .container {
-	width: 100%;
-	height: 100%;
-
-	.landing-page {
-		position:absolute; right: 0; bottom: 0;
-		min-width: 100%; min-height: 100%;
-		width: auto; height: auto; 
-		display: table;
-
-			.landing-content {
-			display: table-cell;
-			text-align: center;
-			vertical-align: middle;
-			width: 100%;
-
-				.landing-page-title {
-					color: white;
-
-				}
-		}
-	}
-
-
+	@include fit-container;
+	padding: 0;
 }
+.landing-page {
+	position:absolute; right: 0; bottom: 0;
+	@include fit-container;
+	display: table;
+}
+.landing-content {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+}
+.landing-page-title {
+	color: white;
+}
+.opacity {
+	@include fit-container;
+	background-color: #fff;
+	opacity: 0.3;
+	position: absolute;
+	z-index: -1;
+}
+
+/*ABOUT ME*/
 .about-me {
 	position: absolute;
 	height: 1000px;
+}
+#particles-js {
 	background-color: black;
+
 }
 
 @media screen and (max-device-width: 800px) {
