@@ -6,13 +6,13 @@ $(document).ready(function () {
 });
 
 jQuery(function($) {
-    var divs = $('.fade');
+    var divs = $('.landing-content');
     var background = $('');
     $(window).on('scroll', function() {
         var st = $(this).scrollTop();
         divs.css({ 
             'margin-top' : -(st/3)+"px", 
-            'opacity' : 1 - st/200
+            // 'opacity' : 1 - st/200
         }); 
         background.css({ 
 			top: -st/3+"px"	

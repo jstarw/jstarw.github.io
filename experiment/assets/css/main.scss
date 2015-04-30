@@ -36,7 +36,9 @@ video#bgvid{
 	width: 100%;
 }
 .landing-page-title {
-	color: white;
+	/*color: white;*/
+	font-family: 'southern-aire';
+	font-size: 10em;
 }
 .opacity {
 	@include fit-container;
@@ -44,6 +46,10 @@ video#bgvid{
 	opacity: 0.3;
 	position: absolute;
 	z-index: -1;
+}
+@font-face {
+	font-family: 'southern-aire';
+	src: url('../fonts/SouthernAire.ttf');
 }
 
 /*ABOUT ME*/
