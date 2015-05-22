@@ -129,7 +129,7 @@ aside {
 
 img {
   margin: auto;
-  width: 100px;
+  width: 90px;
   padding-top: 5em;
   display: block;
 } 
@@ -204,4 +204,11 @@ td > p {
   clear: both;
 }
 
-@media 
+@media screen and (max-width: 650px) {
+  .instatab, .serenity {
+    width: 100%;
+  }
+  .pelvis {
+    width: 50%;
+  }
+}
