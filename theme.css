@@ -10,7 +10,7 @@ html, body {
 	text-align: center;
 	position: relative;
 	top: 50%;
-	font-size: 4em;
+	font-size: 3.5em;
   color: white;
 }
 
@@ -20,7 +20,7 @@ html, body {
   text-align: center;
   position: relative;
   top: 50%;
-  font-size: 3em;
+  font-size: 2.5em;
   color: white;
 }
 
@@ -179,9 +179,29 @@ td > p {
 
 .instatab {
   float: right;
-  width: 50%;
+  width: 500px;
   padding-left: 2em;
   padding-top: 0;
   display: inline-block;
   clear: both;
 }
+
+.pelvis {
+  float: right;
+  width: 200px;
+  /*padding-left: 2em;*/
+  padding-top: 0;
+  display: inline-block;
+  clear: both;
+}
+
+.serenity {
+  float: right;
+  width: 400px;
+  /*padding-left: 2em;*/
+  padding-top: 0;
+  display: inline-block;
+  clear: both;
+}
+
+@media 
