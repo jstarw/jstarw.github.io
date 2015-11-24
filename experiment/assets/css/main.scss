@@ -27,13 +27,12 @@ video#bgvid{
 .landing-page {
 	position:absolute; right: 0; bottom: 0;
 	@include fit-container;
-	display: table;
 }
 .landing-content {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
-	width: 100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	@include fit-container;
 }
 .landing-page-title {
 	/*color: white;*/
