@@ -10,6 +10,7 @@
 <body>
 	<script src="dist/js/bind-polyfill.js"></script>
 	<script src="dist/js/smooth-scroll.js"></script>
+	<script src="dist/js/jquery.min.js"></script>
 
 	<div class="jumbotron">
 		<div id="navbar">
@@ -114,7 +115,7 @@
 				<table class="icon" style='width:100%' align="center">
 					<tr>
 						<td>
-							<a href="https://www.dropbox.com/s/998257xmwk1c6x0/resume.pdf?dl=0">
+							<a href="https://www.dropbox.com/s/hgcs3ygl1sxwm2w/resume.pdf?dl=0">
 								<img src="Images/Dropbox.png">
 							</a>
 						</td>
@@ -154,8 +155,15 @@
 			</div>
 		</div>
 	</div>
+
+	<img id="img_loader" hidden/>
+
 	<script>
 		smoothScroll.init();
+		$('#img_loader').attr('src', 'Images/background1.jpg').load(function () {
+			$('.jumbotron').addClass('fade-in')
+				.css('background-image', "url('Images/background1.jpg')");
+		});
 	</script>
 </body>
 </html>

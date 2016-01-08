@@ -61,8 +61,11 @@ body > div {
 }
 
 .jumbotron {
-  background-image: url("Images/Background1.jpg");
+  background-color: black;
+}
 
+.fade-in {
+  -webkit-transition: background 0.5s linear;
 }
 
 .jumbotron2 {
