@@ -64,8 +64,8 @@ body > div {
   background-color: black;
 }
 
-.fade-in {
-  -webkit-transition: background 0.5s linear;
+#img_loader {
+  display: none;
 }
 
 .jumbotron2 {
