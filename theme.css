@@ -52,6 +52,7 @@ a, a:active {
 }
 
 body > div {
+  display: block;
   margin-bottom: 0px;
   background-size: cover;
   -webkit-background-size: cover;
@@ -60,7 +61,8 @@ body > div {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  clear: both;
+  width: 100%;
+  height: 100%;
 }
 
 .jumbotron {
