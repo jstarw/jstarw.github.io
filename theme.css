@@ -85,16 +85,16 @@ a, a:active {
   display: none;
 }
 
-.jumbotron2 {
+/*.jumbotron2 {
   background-image: url("Images/Background2.jpg");
 }
 
 .jumbotron3 {
   background-image: url("Images/Background3.jpg");
-}
+}*/
 
-.jumbotron4 {
-  background-color: #CCFFCC;
+.jumbotron2, .jumbotron3, .jumbotron4 {
+  background-color: #F1F1F1;
 }
 
 .header {
